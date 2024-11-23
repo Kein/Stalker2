@@ -1,0 +1,25 @@
+{
+	"FileVersion": 3,
+	"Version": 1,
+	"VersionName": "0.1",
+	"FriendlyName": "KeyFrame",
+	"Description": "Adds Sequencer Track for Key Frame generation",
+	"Category": "Runtime",
+	"CreatedBy": "",
+	"CreatedByURL": "",
+	"DocsURL": "",
+	"MarketplaceURL": "",
+	"SupportURL": "",
+	"EnabledByDefault": false,
+	"CanContainContent": false,
+	"IsBetaVersion": true,
+	"IsExperimentalVersion": false,
+	"Installed": false,
+	"Modules": [
+		{
+			"Name": "CinematicKeyFrameTracks",
+			"Type": "Runtime",
+			"LoadingPhase": "Default"
+		}
+	]
+}

@@ -1,0 +1,25 @@
+{
+	"FileVersion": 3,
+	"Version": 1,
+	"VersionName": "1.0",
+	"FriendlyName": "SectorSelector",
+	"Description": "Plugin intended to manage sectors around characters",
+	"Category": "",
+	"CreatedBy": "GSC Game World. vbalachevskyi",
+	"CreatedByURL": "",
+	"DocsURL": "",
+	"MarketplaceURL": "",
+	"SupportURL": "",
+	"EnabledByDefault": false,
+	"CanContainContent": false,
+	"IsBetaVersion": false,
+	"IsExperimentalVersion": false,
+	"Installed": false,
+	"Modules": [
+		{
+			"Name": "SectorSelector",
+			"Type": "Runtime",
+			"LoadingPhase": "Default"
+		}
+	]
+}

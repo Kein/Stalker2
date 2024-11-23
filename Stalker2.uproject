@@ -1,0 +1,174 @@
+{
+	"FileVersion": 3,
+	"EngineAssociation": "",
+	"Category": "",
+	"Description": "",
+	"Modules": [
+		{
+			"Name": "Stalker2",
+			"Type": "Runtime",
+			"LoadingPhase": "Default",
+			"AdditionalDependencies": [
+				"Engine",
+				"CoreUObject",
+				"Paper2D",
+				"UMG",
+				"EnhancedInput",
+				"PrefabAsset",
+				"Niagara",
+				"PlatformCrypto",
+				"PlatformCryptoOpenSSL"
+			]
+		},
+		{
+			"Name": "MediaIOCore",
+			"Type": "Runtime",
+			"LoadingPhase": "Default"
+		},
+		{
+			"Name": "SRLEAsset",
+			"Type": "Runtime",
+			"LoadingPhase": "Default"
+		}
+	],
+	"Plugins": [
+		{
+			"Name": "CommonUI",
+			"Enabled": true
+		},
+		{
+			"Name": "PrefabTool",
+			"Enabled": true,
+			"MarketplaceURL": "com.epicgames.launcher://ue/marketplace/content/d7df59e893f84bccbdcbd9899f773ede"
+		},
+		{
+			"Name": "EditorScriptingUtilities",
+			"Enabled": true
+		},
+		{
+			"Name": "Niagara",
+			"Enabled": true
+		},
+		{
+			"Name": "RawInput",
+			"Enabled": false
+		},
+		{
+			"Name": "Water",
+			"Enabled": true
+		},
+		{
+			"Name": "Landmass",
+			"Enabled": true
+		},
+		{
+			"Name": "HairStrands",
+			"Enabled": false
+		},
+		{
+			"Name": "AlembicHairImporter",
+			"Enabled": false
+		},
+		{
+			"Name": "MovieRenderPipeline",
+			"Enabled": true
+		},
+		{
+			"Name": "MoviePipelineMaskRenderPass",
+			"Enabled": false
+		},
+		{
+			"Name": "ControlRig",
+			"Enabled": true
+		},
+		{
+			"Name": "PythonScriptPlugin",
+			"Enabled": true
+		},
+		{
+			"Name": "FullBodyIK",
+			"Enabled": true
+		},
+		{
+			"Name": "IKRig",
+			"Enabled": true
+		},
+		{
+			"Name": "PoseSearch",
+			"Enabled": true
+		},
+		{
+			"Name": "NavCorridor",
+			"Enabled": true
+		},
+		{
+			"Name": "PoseSearchLocomotion",
+			"Enabled": true
+		},
+		{
+			"Name": "MotionWarping",
+			"Enabled": false
+		},
+		{
+			"Name": "Takes",
+			"Enabled": false
+		},
+		{
+			"Name": "EnhancedInput",
+			"Enabled": true
+		},
+		{
+			"Name": "CinematicKeyFramePlugin",
+			"Enabled": true
+		},
+		{
+			"Name": "GameAnalyticsFacade",
+			"Enabled": false,
+			"SupportedTargetPlatforms": [ "Win64" ]
+		},
+		{
+			"Name": "AnimationBudgetAllocator",
+			"Enabled": true
+		},
+		{
+			"Name": "TraceSourceFilters",
+			"Enabled": false
+		},
+		{
+			"Name": "TraceDataFilters",
+			"Enabled": false
+		},
+		{
+			"Name": "GameplayInsights",
+			"Enabled": true
+		},
+		{
+			"Name": "BinkMedia",
+			"Enabled": true
+		},
+		{
+			"Name": "PhysicsControl",
+			"Enabled": false
+		},
+		{
+			"Name": "PlatformProviderController",
+			"Enabled": false
+		},
+		{
+			"Name": "OnlineSubsystemSteam",
+			"Enabled": true,
+			"TargetAllowList": [
+				"Editor"
+			]
+		},
+		{
+			"Name": "PlatformCrypto",
+			"Enabled": true
+		}
+	],
+	"TargetPlatforms": [
+		"WindowsNoEditor",
+		"Windows",
+		"Win64"
+	]
+}
