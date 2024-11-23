@@ -107,7 +107,7 @@
 		},
 		{
 			"Name": "MotionWarping",
-			"Enabled": false
+			"Enabled": true
 		},
 		{
 			"Name": "Takes",
@@ -135,6 +135,10 @@
 			"Enabled": false
 		},
 		{
+			"Name": "SectorSelector",
+			"Enabled": true
+		},
+		{
 			"Name": "TraceDataFilters",
 			"Enabled": false
 		},
@@ -148,7 +152,7 @@
 		},
 		{
 			"Name": "PhysicsControl",
-			"Enabled": false
+			"Enabled": true
 		},
 		{
 			"Name": "PlatformProviderController",
