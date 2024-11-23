@@ -8,7 +8,7 @@ public class Stalker2 : ModuleRules {
         
         PublicDependencyModuleNames.AddRange(new string[] {
             "AIModule",
-            // "AkAudio",
+            "AkAudio",
             "AnimGraphRuntime",
             "AnimationBudgetAllocator",
             "BinkMediaPlayer",
