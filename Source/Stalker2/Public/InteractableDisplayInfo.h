@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "InteractionType.h"
+//#include "InteractionType.h"
 #include "EDisplayPriority.h"
 #include "InteractableDisplayInfo.generated.h"
 
@@ -17,8 +17,8 @@ public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere)
     FText InteractActionTextSmall;
     
-    UPROPERTY(BlueprintReadWrite, EditAnywhere)
-    EInteractionType InteractionType;
+    //UPROPERTY(BlueprintReadWrite, EditAnywhere)
+    //EInteractionType InteractionType;
     
     UPROPERTY(BlueprintReadWrite, EditAnywhere)
     EDisplayPriority DisplayPriority;

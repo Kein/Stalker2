@@ -1,7 +1,7 @@
 #include "HintBase.h"
 
 UHintBase::UHintBase() {
-    this->InteractionType = EInteractionType::SingleClick;
+    //this->InteractionType = EInteractionType::SingleClick;
     this->FirstPlanStyle = TEXT("Hint");
     this->BackgroundStyle = TEXT("HintBackground");
     this->bEnableStyleManager = true;

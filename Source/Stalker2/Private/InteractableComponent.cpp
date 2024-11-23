@@ -4,7 +4,7 @@ UInteractableComponent::UInteractableComponent(const FObjectInitializer& ObjectI
     this->bEnabled = true;
     this->TriggerUserData = 0;
     this->TriggerAlternativeUserData = 0;
-    this->InteractionType = EInteractionType::SingleClick;
+    //this->InteractionType = EInteractionType::SingleClick;
     this->DisplayPriority = EDisplayPriority::Medium;
     this->InteractionProgressDurationTime = 1.00f;
     this->InteractionProgressIncreasingSpeed = 1.00f;
@@ -24,9 +24,7 @@ bool UInteractableComponent::GetPreventDefaultInteract() const {
     return false;
 }
 
-EInteractionType UInteractableComponent::GetInteractionType() const {
-    return EInteractionType::None;
-}
+//EInteractionType UInteractableComponent::GetInteractionType() const { return EInteractionType::None; }
 
 EDisplayPriority UInteractableComponent::GetDisplayPriority() const {
     return EDisplayPriority::None;

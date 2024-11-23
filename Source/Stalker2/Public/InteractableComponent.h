@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "InteractionType.h"
+//#include "InteractionType.h"
 #include "EDisplayPriority.h"
 #include "InteractableComponentEndInteractSignatureDelegate.h"
 #include "InteractableComponentRunActionSignatureDelegate.h"
@@ -63,8 +63,8 @@ protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere)
     int32 TriggerAlternativeUserData;
     
-    UPROPERTY(EditAnywhere)
-    EInteractionType InteractionType;
+    //UPROPERTY(EditAnywhere)
+    //EInteractionType InteractionType;
     
     UPROPERTY(EditAnywhere)
     EDisplayPriority DisplayPriority;

@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "InteractionType.h"
+//#include "InteractionType.h"
 #include "HoverAction.h"
 #include "WidgetBase.h"
 #include "HintBase.generated.h"
@@ -11,8 +11,8 @@ UCLASS(EditInlineNew)
 class STALKER2_API UHintBase : public UWidgetBase {
     GENERATED_BODY()
 public:
-    UPROPERTY(BlueprintReadWrite, EditAnywhere)
-    EInteractionType InteractionType;
+    //UPROPERTY(BlueprintReadWrite, EditAnywhere)
+    //EInteractionType InteractionType;
     
     UPROPERTY(BlueprintReadWrite, EditAnywhere)
     FString DefaultStylePrefix;
