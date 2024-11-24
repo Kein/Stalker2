@@ -3,8 +3,8 @@
 #include "Components/SceneComponent.h"
 
 AInteractableObject::AInteractableObject(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) {
-    const FProperty* p_DefaultUpdateOverlapsMethodDuringLevelStreaming = GetClass()->FindPropertyByName("DefaultUpdateOverlapsMethodDuringLevelStreaming");
-    (*p_DefaultUpdateOverlapsMethodDuringLevelStreaming->ContainerPtrToValuePtr<EActorUpdateOverlapsMethod>(this)) = EActorUpdateOverlapsMethod::NeverUpdate;
+    //const FProperty* p_DefaultUpdateOverlapsMethodDuringLevelStreaming = GetClass()->FindPropertyByName("DefaultUpdateOverlapsMethodDuringLevelStreaming");
+    //(*p_DefaultUpdateOverlapsMethodDuringLevelStreaming->ContainerPtrToValuePtr<EActorUpdateOverlapsMethod>(this)) = EActorUpdateOverlapsMethod::NeverUpdate;
     this->RootComponent = CreateDefaultSubobject<USceneComponent>(TEXT("DefaultRootComponent"));
     this->bEnabled = false;
     this->bUnbreakable = false;

@@ -36,8 +36,8 @@ AAgent::AAgent(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitia
     this->CutsceneProceduralEyesIntensity = 0.75f;
     this->GuaranteedRelevancyUpdateTime = 20.00f;
     this->RagdollProfileName = TEXT("AgentRagdoll");
-    const FProperty* p_Mesh = GetClass()->FindPropertyByName("Mesh");
-    (*p_Mesh->ContainerPtrToValuePtr<USkeletalMeshComponent*>(this))->SetupAttachment(RootComponent);
+    //const FProperty* p_Mesh = GetClass()->FindPropertyByName("Mesh");
+    //(*p_Mesh->ContainerPtrToValuePtr<USkeletalMeshComponent*>(this))->SetupAttachment(RootComponent);
 }
 
 void AAgent::SetCutsceneProceduralEyesWeight(float Value) const {

@@ -17,7 +17,7 @@ public:
     
     //UNiagaraDataInterfaceAkEvent();
 
-	virtual void PostInitProperties() override {  };
+	virtual void PostInitProperties() override { Super::PostInitProperties(); };
 	
 	//UNiagaraDataInterface Interface
 	virtual FNiagaraDataInterfaceParametersCS* CreateShaderStorage(const FNiagaraDataInterfaceGPUParamInfo& ParameterInfo, const FShaderParameterMap& ParameterMap) const { return NULL; };
