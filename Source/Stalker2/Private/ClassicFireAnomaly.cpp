@@ -6,11 +6,11 @@
 
 AClassicFireAnomaly::AClassicFireAnomaly(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) {
     this->CollisionMeshPtr = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("CollisionMesh"));
-    const FProperty* p_FlamePillarCapsule_Parent = GetClass()->FindPropertyByName("FlamePillarCapsule");
+    //const FProperty* p_FlamePillarCapsule_Parent = GetClass()->FindPropertyByName("FlamePillarCapsule");
     this->FlamePillarCapsule = CreateDefaultSubobject<UCapsuleComponent>(TEXT("FlamePillarComponent"));
     this->IdleVFX = CreateDefaultSubobject<UNiagaraComponent>(TEXT("IdleVFX"));
     this->DecalComponent = CreateDefaultSubobject<UDecalComponent>(TEXT("DecalComponent"));
-    this->CollisionMeshPtr->SetupAttachment(p_FlamePillarCapsule_Parent->ContainerPtrToValuePtr<UCapsuleComponent>(this));
+    this->CollisionMeshPtr->SetupAttachment(RootComponent);
     this->FlamePillarCapsule->SetupAttachment(RootComponent);
     this->IdleVFX->SetupAttachment(FlamePillarCapsule);
     this->DecalComponent->SetupAttachment(FlamePillarCapsule);

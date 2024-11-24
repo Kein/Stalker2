@@ -24,6 +24,7 @@ AObj::AObj(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitialize
     this->AttackComponent = CreateDefaultSubobject<UAttackComponent>(TEXT("AttackComponent"));
     this->FlashlightComponent = NULL;
     this->AkAudioRootComponent = CreateDefaultSubobject<UAkComponent>(TEXT("AkRoot"));
+    // FIXME
     const FProperty* p_Mesh_Parent = GetClass()->FindPropertyByName("Mesh");
     this->AkAudioHeadComponent = CreateDefaultSubobject<UAkComponent>(TEXT("AkHead"));
     this->AkAudioPelvisComponent = CreateDefaultSubobject<UAkComponent>(TEXT("AkPelvis"));
@@ -32,12 +33,13 @@ AObj::AObj(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitialize
     this->AkAudioComponent = (UAkComponent*)AkAudioPelvisComponent;
     this->ShootingParticle = NULL;
     this->PostShootingParticle = NULL;
-    this->AkAudioRootComponent->SetupAttachment(p_Mesh_Parent->ContainerPtrToValuePtr<USkeletalMeshComponent>(this));
-    this->AkAudioHeadComponent->SetupAttachment(p_Mesh_Parent->ContainerPtrToValuePtr<USkeletalMeshComponent>(this));
-    this->AkAudioPelvisComponent->SetupAttachment(p_Mesh_Parent->ContainerPtrToValuePtr<USkeletalMeshComponent>(this));
-    this->AkAudioLeftHandComponent->SetupAttachment(p_Mesh_Parent->ContainerPtrToValuePtr<USkeletalMeshComponent>(this));
-    this->AkAudioRightHandComponent->SetupAttachment(p_Mesh_Parent->ContainerPtrToValuePtr<USkeletalMeshComponent>(this));
-    this->AkAudioComponent->SetupAttachment(p_Mesh_Parent->ContainerPtrToValuePtr<USkeletalMeshComponent>(this));
+    // FIXME
+    this->AkAudioRootComponent->SetupAttachment(RootComponent);
+    this->AkAudioHeadComponent->SetupAttachment(RootComponent);
+    this->AkAudioPelvisComponent->SetupAttachment(RootComponent);
+    this->AkAudioLeftHandComponent->SetupAttachment(RootComponent);
+    this->AkAudioRightHandComponent->SetupAttachment(RootComponent);
+    this->AkAudioComponent->SetupAttachment(RootComponent);
 }
 
 void AObj::StartCutsceneSequence(const AActor* SynchronizationPoint, const FRotator OverrideRotation) {
