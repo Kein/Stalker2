@@ -1,15 +1,12 @@
 # TODO
 Search for `FIXME` if you want to see all the things that need to be addressed
 
-# Plugin dependencies
-1. `Wwise 2023.1.7.8574.3199` if you need audio modding, otherwise use stub
-2. `modio_ue4_public_src_v2023.11.ue5`
-
-If you dont need ModIO then comment out all references and dependencies.
-
+# Optional plugin dependencies
+1. `Wwise 2023.1.7.8574.3199` if you need audio ( otherwise keep stub)
+2. `modio_ue4_public_src_v2023.11.ue5`if you need actual modio functionality in Editor
 
 # Engine changes requirements
-Commend out all references to `EInteractionType` or add an `InteractionType.h`enum to engine space:
+Add an `InteractionType.h`enum to engine space:
 ```c++
 #include "CoreMinimal.h"
 
@@ -26,6 +23,7 @@ enum class EInteractionType : uint8
     EInteractionType_MAX = 7,
 };
 ```
+Alternatively, use `vanilla` branch.
 
-The rest of the engine requirements are commented out, use `FIXME` to find them.
+The rest of the engine requirements (custom modules/interfaces) are commented out, use `FIXME` to find them if needed.
 
