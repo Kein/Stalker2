@@ -41,8 +41,8 @@ public:
     UPROPERTY(BlueprintAssignable)
     FOnUpdateInteract OnUpdateInteract;
     
-    UPROPERTY(BlueprintAssignable)
-    FOnUpdateProgress OnUpdateProgress;
+    //UPROPERTY(BlueprintAssignable)
+    //FOnUpdateProgress OnUpdateProgress;
     
 protected:
     UPROPERTY(EditAnywhere)
