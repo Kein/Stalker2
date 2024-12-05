@@ -102,8 +102,8 @@ public:
     UFUNCTION()
     bool GetPreventDefaultInteract() const;
     
-    UFUNCTION()
-    EInteractionType GetInteractionType() const;
+    //UFUNCTION()
+    //EInteractionType GetInteractionType() const;
     
     UFUNCTION()
     EDisplayPriority GetDisplayPriority() const;
