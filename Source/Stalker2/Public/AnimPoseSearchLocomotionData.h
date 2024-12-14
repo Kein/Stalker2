@@ -39,7 +39,7 @@ public:
     UPROPERTY(BlueprintReadOnly)
     FMotionMatchingSettings Settings;
     
-	// FIXME
+    // FIXME
     // UPROPERTY(BlueprintReadOnly)
     // FPoseSearchProceduralMovement ProceduralMovement;
     

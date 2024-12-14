@@ -1,7 +1,3 @@
-/*
-#include "EventManager.h"
+#include "Stalker2/Public/EventManager.h"
 
-// FIXME
-UEventManager::UEventManager(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) {}
-
-*/
+UEventManager::UEventManager() {}

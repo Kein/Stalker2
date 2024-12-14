@@ -33,6 +33,7 @@ UInventoryNew::UInventoryNew() {
     this->HintChangeCompareItemHint = NULL;
     this->HintDropItem = NULL;
     this->HintLootTakeItem = NULL;
+    this->HintLootPutDown = NULL;
     this->HintLootTakeAll = NULL;
     this->HintSortInventory = NULL;
     this->HintShowContextualMenu = NULL;

@@ -4,8 +4,8 @@
 
 UENUM()
 enum class ENoteType : int32 {
-    Data,
     Flash,
+    Data,
     Notes,
     Audio,
     GetCount,

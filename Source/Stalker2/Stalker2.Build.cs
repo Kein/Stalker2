@@ -33,6 +33,7 @@ public class Stalker2 : ModuleRules {
             "MovieSceneTracks",
             "NavigationSystem",
             "Niagara",
+            "NiagaraCore",
             "NiagaraAnimNotifies",
             "PhysicsControl",
             "PhysicsCore",

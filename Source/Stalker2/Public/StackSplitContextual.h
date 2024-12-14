@@ -2,6 +2,7 @@
 #include "CoreMinimal.h"
 #include "UObject/NoExportTypes.h"
 #include "Blueprint/UserWidget.h"
+#include "ESplitStackTypeDirection.h"
 #include "ItemUID.h"
 #include "StackSplitContextual.generated.h"
 
@@ -64,6 +65,12 @@ protected:
     
     UPROPERTY(EditDefaultsOnly)
     UCurveFloat* MovementCurve;
+    
+    UPROPERTY(EditDefaultsOnly)
+    TMap<ESplitStackTypeDirection, FString> ConfirmHintType;
+    
+    UPROPERTY(EditDefaultsOnly)
+    TMap<ESplitStackTypeDirection, FString> ConfirmAllHintType;
     
     UPROPERTY(Instanced)
     UButton* ArrowLeft;
