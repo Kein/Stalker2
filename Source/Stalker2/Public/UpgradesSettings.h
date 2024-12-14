@@ -18,10 +18,10 @@ public:
     FSlateColor Available;
     
     UPROPERTY(EditDefaultsOnly)
-    FSlateColor Toggleable;
+    FSlateColor PurchasedModuleOn;
     
     UPROPERTY(EditDefaultsOnly)
-    FSlateColor ResetUpgrade;
+    FSlateColor PurchasedModuleOff;
     
     UPROPERTY(EditDefaultsOnly)
     FSlateColor Unavailable;

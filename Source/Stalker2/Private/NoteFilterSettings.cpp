@@ -2,6 +2,6 @@
 
 FNoteFilterSettings::FNoteFilterSettings() {
     this->bIsEnableFilter = false;
-    this->Filter = ENoteType::Data;
+    this->Filter = ENoteType::Flash;
 }
 

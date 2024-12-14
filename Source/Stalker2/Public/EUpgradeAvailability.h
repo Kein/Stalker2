@@ -9,8 +9,8 @@ enum class EUpgradeAvailability : uint8 {
     Purchased,
     Blocked,
     BlockedHidden,
-    Toggleable,
-    ResetUpgrade,
+    PurchasedModuleOn,
+    PurchasedModuleOff,
     GetCount,
 };
 

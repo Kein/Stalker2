@@ -134,6 +134,9 @@ protected:
     UHintInputController* HintLootTakeItem;
     
     UPROPERTY(Instanced)
+    UHintInputController* HintLootPutDown;
+    
+    UPROPERTY(Instanced)
     UHintInputController* HintLootTakeAll;
     
     UPROPERTY(Instanced)
